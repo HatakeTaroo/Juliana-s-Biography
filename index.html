@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perkenalan Hatake</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Space+Mono&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+
+    body {
+      font-family: 'Space Mono', monospace;
+      background-color: #fdfdf9;
+      color: #333;
+    }
+
+    /* Hero Section */
+    .hero {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background: url("background.jpg") center center / cover no-repeat;
+    }
+
+    /* Fade bawah */
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 100%; height: 40%;
+      background: linear-gradient(to bottom, rgba(253,253,249,0) 0%, #fdfdf9 100%);
+    }
+
+    .hero-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      width: 100%;
+      padding: 0 40px;
+      z-index: 1;
+    }
+
+    /* Hero Text */
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      transform: translateY(-200px);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      margin: 0;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #fff;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+    }
+
+    /* Diamond */
+    .diamond-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .diamond {
+      width: 100px; height: 100px;
+      background: #ccc;
+      transform: rotate(45deg);
+      transition: all 0.5s ease;
+      overflow: hidden;
+    }
+
+    .diamond img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transform: rotate(-45deg) scale(1.2);
+      filter: grayscale(100%);
+      transition: all 0.5s ease;
+    }
+
+    /* Efek hover */
+    .diamond:hover {
+      transform: rotate(0deg) scale(1.1);
+      border-radius: 10px;
+    }
+
+    .diamond:hover img {
+      transform: rotate(0deg) scale(1.1);
+      filter: grayscale(0%);
+    }
+
+    /* Section Konten */
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    section p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    /* Tambahan warna */
+    .fullname {
+      color: #1e90ff; /* biru */
+      font-weight: bold;
+    }
+
+    .nickname {
+      color: #ff69b4; /* pink */
+      font-weight: bold;
+    }
+
+    .info {
+      color: #1e90ff; /* biru */
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-title">
+      <!-- 3 diamond kiri -->
+      <div class="diamond-container">
+        <div class="diamond"><img src="diamond1.jpg" alt="kiri1"></div>
+        <div class="diamond"><img src="diamond2.jpg" alt="kiri2"></div>
+        <div class="diamond"><img src="diamond3.jpg" alt="kiri3"></div>
+      </div>
+
+      <!-- Nama di tengah -->
+      <div class="hero-text">
+        <h1>Juliana Gloria br Sipayung</h1>
+        <p>Hatake | Computer Science | a lot of hobbies</p>
+      </div>
+
+      <!-- 3 diamond kanan -->
+      <div class="diamond-container">
+        <div class="diamond"><img src="diamond4.jpg" alt="kanan1"></div>
+        <div class="diamond"><img src="diamond5.jpg" alt="kanan2"></div>
+        <div class="diamond"><img src="diamond6.jpg" alt="kanan3"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+  <h2>It's Me!!</h2>
+
+
+  <section>
+  <p>
+    So… who exactly is <span class="fullname">Juliana Gloria br Sipayung</span>?  
+    Well, it kinda depends on which nickname you use.  
+    <span class="fullname">Juliana</span> pops up when I meet someone new—it’s a bit more formal.  
+    <span class="nickname">Juli</span> is the casual, everyday version most people go with.  
+    But my personal favorite will always be <span class="nickname">Hatake</span>, inspired by Kakashi Hatake from Naruto---<i>yeaaa😏</i>, and it’s the name my closest friends call me, usually with some jokes and laughter.  
+    And sometimes, I even use <span class="nickname">Roronoa D Hatake</span> as a username or for filling out addresses when shopping online.  
+    It’s kind of silly, but it’s fun, and I like how one nickname can show a whole different side of me.
+  </p>
+
+  <p>
+    I live in a housing complex right between Patumbak and Ujung Serdang.  
+    People often ask, “Where exactly do you live?” and I have to give a little extra explanation.  
+    But that’s fine—it’s all part of my story.  
+  </p>
+
+  <p>
+    I come from a warm, supportive family.  
+    My parents taught me how to work hard while staying strong and kind.  
+    They showed me that even the smallest things we do can build something bigger over time.
+  </p>
+
+  <p>
+    Now, let’s talk hobbies—one of my favorite parts about myself.  
+    I love drawing—it’s my way of turning imagination into something real.  
+    Reading is another favorite, because books can take me places I’ve never been.  
+    I’m also a huge fan of movies and anime; any story that keeps me hooked works.  
+    On a more active note, I play badminton, which constantly reminds me that stamina, focus, and energy are just as important in life as in the game.
+  </p>
+
+  <p>
+    I also really enjoy DIY projects.  
+    There’s something special about making something with your own hands.  
+    And when I need to chill, I pick up my guitar—even if it doesn’t sound perfect, each note feels like a tiny win.
+  </p>
+
+  <p>
+    When it comes to skills, I’d say I’m naturally curious.  
+    I love learning new things, adapting to different situations, and trying stuff I’ve never done before.  
+    Languages really interest me, too, because I think they’re the key to understanding the world and connecting with people from different cultures.
+  </p>
+
+  <p>
+    As for experience, I might not have massive achievements yet, but I’ve learned a lot from small things.  
+    From school projects to family responsibilities and community activities, I’ve gained lessons about teamwork, time management, responsibility, and above all—resilience.
+  </p>
+</section>
